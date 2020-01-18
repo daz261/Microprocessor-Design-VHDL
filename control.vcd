@@ -1,0 +1,180 @@
+$date
+	Mon Oct 29 00:09:45 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module control_tb $end
+$var wire 1 ! regWrite $end
+$var wire 1 " regDst $end
+$var wire 3 # pc_control [2:0] $end
+$var wire 1 $ memReg $end
+$var wire 4 % alu_control [3:0] $end
+$var wire 1 & MemRW $end
+$var wire 1 ' ALUSrc $end
+$var reg 1 ( alu_zero $end
+$var reg 32 ) instruction [31:0] $end
+$scope module Control $end
+$var wire 1 ( alu_zero $end
+$var wire 32 * instruction [31:0] $end
+$var wire 6 + op [5:0] $end
+$var reg 1 ' ALUSrc $end
+$var reg 1 & MemRW $end
+$var reg 26 , address [25:0] $end
+$var reg 4 - alu_control [3:0] $end
+$var reg 6 . funct [5:0] $end
+$var reg 16 / immediate [15:0] $end
+$var reg 1 $ memReg $end
+$var reg 3 0 pc_control [2:0] $end
+$var reg 5 1 rd [4:0] $end
+$var reg 1 " regDst $end
+$var reg 1 ! regWrite $end
+$var reg 5 2 rs [4:0] $end
+$var reg 5 3 rt [4:0] $end
+$var reg 5 4 shamt [4:0] $end
+$var reg 3 5 type [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b1111 -
+b0 ,
+b0 +
+b0 *
+b0 )
+0(
+0'
+0&
+b1111 %
+0$
+b0 #
+1"
+1!
+$end
+#10
+1'
+0"
+b10 %
+b10 -
+b10 5
+b10 /
+b1000 +
+b10 .
+b1000 3
+b1000 2
+b100001000010000000000000000010 )
+b100001000010000000000000000010 *
+1(
+#20
+b1010 3
+b1010 2
+b100001010010100000000000000010 )
+b100001010010100000000000000010 *
+0(
+#30
+0'
+1"
+b1 5
+b1000 1
+b0 +
+b100000 .
+b1000 2
+b0 /
+b1000010100100000000100000 )
+b1000010100100000000100000 *
+1(
+#40
+1'
+0"
+b10 5
+b1 /
+b1000 +
+b10 %
+b10 -
+b1 .
+b0 1
+b1001 3
+b1001 2
+b100001001010010000000000000001 )
+b100001001010010000000000000001 *
+0(
+#50
+0!
+1&
+b0 .
+b1000 2
+b0 /
+b101011 +
+b10101101000010010000000000000000 )
+b10101101000010010000000000000000 *
+#60
+1$
+1!
+0&
+b1010 2
+b100011 +
+b10001101010010010000000000000000 )
+b10001101010010010000000000000000 *
+#70
+0'
+1"
+0$
+b110 %
+b110 -
+b100010 .
+b1 5
+b1000 1
+b1000 2
+b0 +
+b1000010010100000000100010 )
+b1000010010100000000100010 *
+#80
+0"
+0!
+b1 %
+b1 -
+b1000 .
+b10 5
+b1 4
+b0 1
+b1001000 /
+b100 +
+b10001000010010000000001001000 )
+b10001000010010000000001001000 *
+#90
+b1 #
+b1 0
+b110 %
+b110 -
+b0 .
+b100 5
+b0 4
+b0 3
+b0 2
+b0 /
+b111 ,
+b10 +
+b1000000000000000000000000111 )
+b1000000000000000000000000111 *
+#100
+b111 #
+b111 0
+b1111 %
+b1111 -
+b111111111111111111111111 ,
+b111111 +
+b11111100111111111111111111111111 )
+b11111100111111111111111111111111 *
+#110
